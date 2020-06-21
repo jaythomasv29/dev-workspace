@@ -14,12 +14,20 @@ function getMiddle(s){
     let middlePosition = Math.floor(strLength/2); //find the middle position by halving and math.floor
     if(strLength % 2 == 0){
         //handle even numbers
-        console.log(`${s[middlePosition-1]}${s[middlePosition]}`)
+        return (`${s[middlePosition-1]}${s[middlePosition]}`)
     } else {
-        console.log(s[middlePosition])
+        return (s[middlePosition])
     }
+}
+
+const getMiddle2 = (s) => {
+    let strLength = s.length  //get length of string 
+    let middlePosition = Math.floor(strLength/2); //find the middle position by halving and math.floor
+    return strLength % 2 == 0 ? `${s[middlePosition-1]}${s[middlePosition]}` : s[middlePosition]
 }
 getMiddle("A")
 getMiddle("hello") //l
 getMiddle("test")  //es
 getMiddle("tester") //st
+
+
