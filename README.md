@@ -1,11 +1,13 @@
+
+
+
+```
 # js-workspace
 A Javascript workspace that tackles fundamentals, algorithms from codewars, and full stack web development.
 
-
-
 JAVASCRIPT TYPES
 -----------------
-1. Number 
+1. Number
 2. String
 3. Boolean
 4. Undefined
@@ -26,7 +28,7 @@ JAVASCRIPT COMPARISONS
 JAVASCRIPT VARIABLES
 -----------------
 var
-<!-- let (new in ECMAScript 6)-->  
+<!-- let (new in ECMAScript 6)--> 
 <!-- const (new in ECMAScript 6)-->
 
 JAVASCRIPT CONDITIONALS
@@ -36,7 +38,6 @@ else
 else if
 <!-- ternary operator -->
 <!-- switch -->
-
 
 JAVASCRIPT LOGICAL OPERATORS
 -----------------
@@ -60,9 +61,8 @@ JAVASCRIPT LOOPING
 -----------------
 for
 while
-do 
-forEach (new in ECMAScript 5) 
-
+do
+forEach (new in ECMAScript 5)
 
 JAVASCRIPT KEYWORDS
 -----------------
