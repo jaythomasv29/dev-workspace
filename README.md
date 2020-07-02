@@ -63,6 +63,10 @@ for
 while
 do
 forEach (new in ECMAScript 5)
+.map()
+.filter()
+.reduce()
+
 
 JAVASCRIPT KEYWORDS
 -----------------
