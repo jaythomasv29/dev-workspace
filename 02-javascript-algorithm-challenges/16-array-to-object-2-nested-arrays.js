@@ -1,15 +1,22 @@
-Write a function 'transformArrayToObject' 
-which takes in an array of arrays, 
-and returns an object with each pair of elements
- in the array as a key-value pair.
+// Write a function 'transformArrayToObject' 
+// which takes in an array of arrays, 
+// and returns an object with each pair of elements in the array as a key-value pair.
 
- var input = [['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]];
+// function input
+var input = [['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]];
 
- function transformEmployeeData(employeeData) {
+
+// function output should look like this
+// {
+//     make : 'Ford',
+//     model : 'Mustang',
+//     year : 1964
+//   }
+
+function transformArrayToObject(array) {
     // your code here
-    const filteredData = []
-    for (i of input){ filteredData.push(Object.fromEntries(i))}
-    console.log(filteredData)
+    const obj = Object.fromEntries(array)
+    return obj
   }
 
-  transformEmployeeData
+  transformArrayToObject([['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]])
