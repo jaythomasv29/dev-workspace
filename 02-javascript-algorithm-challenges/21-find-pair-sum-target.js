@@ -25,6 +25,7 @@ function findPairForSum(integers, target) {
         return pair.flat()
     } else {
         console.log(`More than one pair exist`)
+        pair.forEach(p => console.log(p))
         return pair
     }
 
