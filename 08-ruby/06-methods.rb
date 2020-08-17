@@ -9,12 +9,22 @@ end
 
 def checkForOlder(person1, person2)
    if person1 > person2
-       p 'person1 is older'
+       return 'person1 is older'
    elsif person2 > person1
-       p 'person2 is older'
+       return 'person2 is older'
    else
-       p 'they are the same age'
+       return 'they are the same age'
    end
 end
 
-checkForOlder(21, 21)
+
+
+p checkForOlder(21, 21)
+
+# Calculate the average of two numbers and return the average as a number
+def calc_average(num1, num2)
+    return (num1 + num2) / 2.0
+end
+
+result = calc_average 9, 10
+p result
