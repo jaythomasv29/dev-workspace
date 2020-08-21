@@ -4,6 +4,7 @@ def fizz_buzz(max)
   i = 1 # initial index is greater than 0
   while i < max
     if (i % 4 == 0 && i % 6 != 0) || (i % 6 == 0 && i % 4 != 0)
+        # ( i % 4 == 0 || i % 6 == 0 ) && !( i % 4 == 0 && i % 6 == 0 )
     	nums << i
   	end
     i+=1
