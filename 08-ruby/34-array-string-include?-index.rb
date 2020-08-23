@@ -6,7 +6,7 @@ p 'hello'.index('z')
 
 
 # evaluates to a boolean
-p 'hello'.include?('o')
+p 'hello'.include?('a' || 'e' || 'i' || 'o' || 'u')
 p [1,2,3,4,5,6,7].include?(6)
 
 
