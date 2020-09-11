@@ -6,20 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="quiz1.css">
-
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    
 </head>
 
 <body>
     <header>
             <h1>My Portfolio</h1>
         <!-- Begin Nav Bar-->
-            <ul>
+            <ul id="first-nav-section">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Coding Lessons</a></li>
+                <li><a href="#">Coding Lessons</a></li>    
+                <li><a href="#">Resume</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://github.com/jaythomasv29"><i class="fab fa-instagram"></i></a> Github</li>
+                <li><a href="https://github.com/jaythomasv29"><i class="fab fa-instagram"></i></a> LinkedIn</li>
+                <li id="underline"><a href="https://github.com/jaythomasv29"><i class="fab fa-instagram"></i></a> Lastest from me on Medium!</li>
             </ul>
     </header> <!-- End Nav Bar -->
     <main> <!-- main content for portfolio gallery -->
@@ -35,7 +42,21 @@
         C/O https://placeholder.com/" alt="" srcset="">
     </main>
     <footer>
+        <section class="section" id="section-footer">
+        <p>Thank you for visiting my website! Stay tuned for the latest tutoring mentor program</p>
         <h2 id="alert">Contact me! </h2>
+        <form action="mailto:james.vongampai@gmail.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Comment:<br>
+            <input type="text" name="comment" size="50"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+            </form>
+        </section>
+            
     </footer>
 </body>
 

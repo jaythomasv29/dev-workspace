@@ -1,31 +1,35 @@
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
 header {
     border-bottom: 1px solid black;
     margin-bottom: 20px;
 }
+
 h1 {
     text-align: center;
 }
+
 /* nav styling begin */
 ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
+
 li {
     margin: 10px;
     justify-content: center;
     border-right: 1px solid #f0f0f5;
     padding: 1rem;
     list-style: none;
+    padding: 0;
 }
+
 li a {
     text-decoration: none;
     color: grey
-    
 }
 
 /* nav styling end */
@@ -35,6 +39,7 @@ main {
     justify-content: center;
     flex-direction: row;
 }
+
 img {
     margin: 10px;
     /* height: 10rem; */
@@ -42,13 +47,25 @@ img {
     border: 1px solid black;
     transition: all 1s;
 }
-img:hover{
+
+img:hover {
     transform: scale(1.1)
 }
 
 h1 {
     font-size: 2rem;
 }
+
 #alert {
     color: red;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border-top: 1px solid grey;
+}
+
+#underline {
+    font-style: italic;
 }
