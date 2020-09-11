@@ -14,7 +14,7 @@ def is_valid_email(str)
   if str.split("@").length == 2 && str.split("@")[1].split(".").length != 2
     isValid = false
   end
-  if str.split(/\d/).length > 1
+  if !!(str =~ (/\d/)) # if it contains any numbers, it is a false match
     isValid = false
   end
   return isValid
@@ -26,5 +26,5 @@ puts is_valid_email("jdoe@g@mail.com")  # => false
 puts is_valid_email("jdoe42@gmail.com") # => false -- THIS SHOULD BE TRUE?
 puts is_valid_email("jdoegmail.com")    # => false
 puts is_valid_email("az@email")         # => false
-
-# p "jdoe@gmail.com".split(/\d/)
+# p "digit"
+# p !!("jdoe@gmail.com" =~ (/\d/))
