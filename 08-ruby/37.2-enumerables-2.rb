@@ -9,26 +9,34 @@
 months = ["Jan", "Feb", "Mar", "Apr"]
 
 # BASIC WHILE LOOP
-p "basic while loop"
-i = 0
-while i < months.length
-  p months[i]
-  i += 1
-end
+# p "basic while loop"
+# i = 0
+# while i < months.length
+#   p months[i]
+#   i += 1
+# end
 
 # Array enumerable using .each{}
-months.each { |month| p month } # block of code with |month| being block parameter
+# months.each { |month| p month } # block of code with |month| being block parameter
 
 # Array enumerable using .each{} - multiline block
-p "multiline block"
-months.each do |month|
-  p month
+# p "multiline block"
+# months.each do |month|
+#   p month
+# end
+
+# Array enumerable using .each_with_index{}
+months.each_with_index do |month, index|
+  p "#{month} #{index}"
 end
 
 # 'String Enumerable'
 sentence = "people just want me to get a job, but do not know shit."
-sentence.each_char { |char| p char } # String enumerable using .each_char
+# sentence.each_char { |char| p char } # String enumerable using .each_char
 
-sentence.each_char do |char| # String enumerable using multiline block
-  p char + "!"
-end
+# sentence.each_char do |char| # String enumerable using multiline block
+#   p char + "!"
+# end
+
+# 'String Enumerable - with index
+sentence.each_char.with_index { |char, index| p "#{char}, #{index}" }
