@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List</title>
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="diagonal-split-background">
+    <div class="container">
+        <h1 class="text-center"><%= currentDay %> </h1>
+        <h2 class="text-center">Todo List</h2>
+        <form class="text-center" action="/" method="POST">
+        <!-- <label for="task">Enter Todo:</label>
+        <input type="text" name="task" id="task" placeholder="Insert task"> -->
+        <div class="input-group input-group-lg box">
+                <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Enter Task:</span>
+                      </div>
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn-outline-danger" type="button">Clear List</button>
+                  <button class="btn-outline-success" type="button">Add Task</button>
+                </div>
+              </div>
+        </form>
+        <% if (todos.length) { %>
+            <ul class="">
+                <% todos.forEach((todo, index) => { %>
+                
+                        <li class="item"><%=`${index}: ${todo}` %></li>
+                <% })%> 
+            </ul>
+        <% } %> 
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
