@@ -10,14 +10,12 @@ def pig_latin_word(word)
     if vowels.include?(char) && i == 0 # case where looking at first letter
       result = word += "yay"
       return result
-    else # this is logic where we manipulate a non-vowel first letter
+    elsif vowels.include?(char) # this is logic where we manipulate a non-vowel first letter
       # we need to find the next vowel
-      if vowels.include?(char)
-        addFromVowel = word[i..-1] # range from vowel to end
-        addToBack = word[0...i] # range from beginning consanant to excluding vowel
-        result = "#{addFromVowel}#{addToBack}ay"
-        return result
-      end
+      addFromVowel = word[i..-1] # range from vowel to end
+      addToBack = word[0...i] # range from beginning consanant to excluding vowel
+      result = "#{addFromVowel}#{addToBack}ay"
+      return result
     end
   end
 end
