@@ -14,5 +14,9 @@ def unique_elements(arr)
     return uniqueEleArr
   end
   
-  print unique_elements(['a', 'b', 'a', 'a', 'b', 'c']) #=> ["a", "b", "c"]
+  # print unique_elements(['a', 'b', 'a', 'a', 'b', 'c']) #=> ["a", "b", "c"]
   puts
+
+  hash = {'james'=> 'kj', 'ok' => 'be'}
+  p hash.values
+  p hash.keys
