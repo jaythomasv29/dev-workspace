@@ -25,3 +25,7 @@ countries = [
 ]
 print map_by_name(countries) #=> ["Japan", "Hungary", "Kenya"]
 puts
+
+p countries[0].keys
+
+p 'jameson'.scan(/[aeiou]/)
