@@ -17,7 +17,7 @@ def most_vowels(sentence)
   return sorted[sorted.length - 1][0] # the last index of the array that is the 1st element that is the word
 end
 
-p most_vowels("what a wonderful life") #=> "wonderful"
+p most_vowels("what a wonderful life ja jameson booooooooootcamp") #=> "wonderful"
 # Helper function to count vowels
 def vowel_count(word)
   count = 0
