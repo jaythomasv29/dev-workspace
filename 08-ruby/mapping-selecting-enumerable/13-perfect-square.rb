@@ -34,8 +34,23 @@
 def perfect_square?(num)
 end
 
-puts perfect_square?(5)   #=> false
-puts perfect_square?(12)  #=> false
-puts perfect_square?(30)  #=> false
-puts perfect_square?(9)   #=> true
-puts perfect_square?(25)  #=> true
+# puts perfect_square?(5)   #=> false
+# puts perfect_square?(12)  #=> false
+# puts perfect_square?(30)  #=> false
+# puts perfect_square?(9)   #=> true
+# puts perfect_square?(25)  #=> true
+
+def perfect_square2?(num)
+  (1..num).each do |n|
+    if n ** 2 == num
+      return true
+    end
+  end
+  return false
+end
+
+puts perfect_square2?(5)   #=> false
+puts perfect_square2?(12)  #=> false
+puts perfect_square2?(30)  #=> false
+puts perfect_square2?(9)   #=> true
+puts perfect_square2?(25)  #=> true
