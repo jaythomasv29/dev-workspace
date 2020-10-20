@@ -26,6 +26,7 @@ def get_factors(num)
   end
   return factors
 end
+
 # prime helper function
 def is_prime(integer)
   isPrime = true
